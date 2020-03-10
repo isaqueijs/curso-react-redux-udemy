@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import PrimeiroComponente from './componentes/PrimeiroComponente'
+// import PrimeiroComponente from './componentes/PrimeiroComponente'
+import { CompA, CompB } from './componentes/DoisComponentes'
 
 const elemento = document.getElementById("root");
 ReactDOM.render(
     <div>
-        <PrimeiroComponente valor="Bom dia!" idade={25} />
+        <CompA valor="Olá eu sou o A!" />
+        <CompB valor="B na área!" />
+        {/* <PrimeiroComponente valor="Bom dia!" idade={25} /> */}
     </div>
 , elemento)
 
